@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background-color: initial;
+  border: 0;
+  text-align: left;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#app {
+  justify-content: center;
+  align-content: center;
+  height: -webkit-fill-available;
+}
+
+#apiContents {
+  background-color: white;
+  display: grid;
+  width: 700px;
+  margin: auto;
+  padding: 25px;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+#details {
+  border-top: 1px solid black;
+  padding: 5px 0;
+}
+
+#header {
+  grid-area: 1 / span 2;
+  text-align: center;
+}
+
+#upcomingParty {
+  grid-area: 2 / 1;
+}
+
+#partyDetails {
+  grid-area: 2 / 2;
+}
+
+#upcomingParty,
+#partyDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  height: 25px;
+  padding: 0 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: small;
+}
+
+button,
+h4 {
+  text-transform: capitalize;
+}
+
+button:hover {
+  background-color: #000;
+  color: darkgray;
+  text-indent: 15px;
+}
+
+body {
+  background-color: lightgray;
+}
+
+p {
+  margin: 10px 0;
+  display: block;
+}
